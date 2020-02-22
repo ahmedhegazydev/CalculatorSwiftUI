@@ -8,8 +8,10 @@
 
 import SwiftUI
 import UIKit
+import Toaster
 
-enum CalcCases {
+
+enum CalcCases : String{
     case devide, add, minus, multiply, equals
     case zero, one, two, three, four, five, six, seven, eight, nine
     case ac, plusMinus, reminder
@@ -75,6 +77,73 @@ class GlobaleEnvironment: ObservableObject{
     
     func receiveInput(button: CalcCases){
         self.displayRes = button.title
+        
+        switch button {
+        case .zero:
+            Toast(text: button.rawValue).show()
+            
+            break
+        case .one:
+            Toast(text: button.rawValue).show()
+            
+            break
+        case .two:
+            
+            break
+        case .three:
+            
+            break
+        case .four:
+            
+            break
+        case .five:
+            
+            break
+        case .six:
+            
+            break
+        case .seven:
+            
+            break
+        case .eight:
+            
+            break
+        case .nine:
+            
+            
+            break
+        case .ac:
+            
+            break
+        case .reminder:
+            
+            break
+        case .plusMinus:
+            
+            
+            break
+        case .devide:
+            
+            break
+        case .add:
+            
+            break
+        case .minus:
+            
+            break
+        case .multiply:
+            
+            break
+        case .equals:
+            
+            break
+        case .dot:
+            
+            break
+        default:
+            
+            break
+        }
     }
     
 }
